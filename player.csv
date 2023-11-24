@@ -1,0 +1,5 @@
+playerseqno,p_name,birth,height,weight,team,emblem,position,foot,backnumber,emblemlink
+2,손흥민,7/8/1992,183cm,77kg,"토트넘 홋스퍼 FC",assets/img/Tottenham_emb.jpg,공격수,양발,7,https://www.tottenhamhotspur.com/teams/men/players/
+3,"리오넬 메시",6/24/1987,169cm,67kg,"인터 마이애미 CF",assets/img/miami_emb.jpg,공격수,왼발,10,https://www.intermiamicf.com/club/roster
+4,"프렝키 더용",5/12/1997,180cm,74kg,"FC 바르셀로나",assets/img/barcelona_emb.jpg,미드필더,오른발,21,https://www.fcbarcelona.com/en/football/first-team/players/
+5,"Ali Boujamya",10/05/1994,178cm,88kg,Jinny,NA,attack,both,27,NA
