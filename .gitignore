@@ -1,1 +1,8 @@
-.DS_Store
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Gradle
+.gradle/
+build/
