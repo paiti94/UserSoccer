@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.springboot.WhatsmyteamController.MyteamDAO">
+	
+	<select id="showMyTeam" resultType="com.human.springboot.WhatsmyteamController.MyteamDTO">
+		SELECT team_name, team_tactics, team_formation, amblem_logo, team_uniform, league_logo
+		FROM myteam
+		WHERE team_formation = #{param1} and team_tactics = #{param2}
+		ORDER BY league_logo
+	</select>
+
+</mapper>
