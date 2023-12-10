@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.springboot.AthleteController.AthleteDAO">
+	<select id="playerList"
+		resultType="com.human.springboot.AthleteController.AthleteDTO">
+		select id, name, position, dateOfBirth, nationality, team, teamId from
+		Players where name = #{param1}
+	</select>
+	<select id="playerListAll"
+		resultType="com.human.springboot.AthleteController.AthleteDTO">
+		select id, name, position, dateOfBirth, nationality, team, teamId from
+		Players
+	</select>
+	<insert id="insertPlayer"
+		parameterType="com.human.springboot.AthleteController.AthleteDTO">
+		INSERT INTO Players (id, name, position, dateOfBirth, nationality, team,
+		teamId)
+		VALUES (#{id}, #{name}, #{position}, #{dateOfBirth}, #{nationality},
+		#{team}, #{teamId})
+	</insert>
+	<delete id="deleteAll">
+		DELETE FROM Players
+	</delete>
+	<select id="playerListForMatch"
+		resultType="com.human.springboot.AthleteController.AthleteDTO">
+			SELECT id, name, position, dateOfBirth, nationality, team, teamId
+		FROM Players
+		ORDER BY RAND()
+		LIMIT #{param1}
+		</select>
+</mapper>
