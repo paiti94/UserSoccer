@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-	PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN"
-	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.human.springboot.MainController.MainDAO">
 	<!-- player select -->
-	<select id="playerList" resultType="com.human.springboot.MainController.MainDTO">
-		select p_name, birth, height, weight, team, emblem, position, foot, backnumber, emblemlink from player where p_name = #{param1}
+	<select id="playerList"
+		resultType="com.human.springboot.MainController.MainDTO">
+		select p_name, birth, height, weight, team, emblem, position, foot,
+		backnumber, emblemlink from player where p_name = #{param1}
 	</select>
 	<!-- end player select -->
 	<!-- player all select -->
-	<select id="playerListAll" resultType="com.human.springboot.MainController.MainDTO">
-		select p_name, birth, height, weight, team, emblem, position, foot, backnumber, emblemlink from player 
+	<select id="playerListAll"
+		resultType="com.human.springboot.MainController.MainDTO">
+		select p_name, birth, height, weight, team, emblem, position, foot,
+		backnumber, emblemlink from player
 	</select>
 	<!-- end player all select -->
 </mapper>

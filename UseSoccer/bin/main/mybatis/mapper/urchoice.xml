@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-	PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN"
-	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.human.springboot.WhosurchoiceController.WhosurchoiceDAO">
-	
-	<select id="showMatch" resultType="com.human.springboot.WhosurchoiceController.WhosurchoiceDTO">
+
+	<select id="showMatch"
+		resultType="com.human.springboot.WhosurchoiceController.WhosurchoiceDTO">
 		SELECT player_name, player_pic
 		FROM choicegameplayerlist
 	</select>
-	<select id="showMatchByRound" resultType="com.human.springboot.WhosurchoiceController.WhosurchoiceDTO">
+	<select id="showMatchByRound"
+		resultType="com.human.springboot.WhosurchoiceController.WhosurchoiceDTO">
 		SELECT player_num, player_name, player_pic
 		FROM choicegameplayerlist
 		ORDER BY RAND()
