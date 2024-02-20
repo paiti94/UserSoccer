@@ -17,7 +17,7 @@ public class OpenAIService {
 		String result = "";
 	 try {
          // Set your OpenAI API key
-         String apiKey = "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";
+         String apiKey = "":
 
          // Set the API endpoint URL
          String apiUrl = "https://api.openai.com/v1/your-endpoint";
